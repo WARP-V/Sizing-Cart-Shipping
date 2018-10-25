@@ -1,13 +1,14 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
-  "license": "",
+  "name": "Sizing-Cart-Shipping_Service",
+  "version": "1.0",
+  "description": "Building Air Jordan component with MERN",
+  "author": "Pouya Ghazvini",
+  "license": "N/A",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "eslnt": "eslint --ignore-path .gitignore . --fix"
   },
   "dependencies": {
   },
