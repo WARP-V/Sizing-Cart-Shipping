@@ -1,6 +1,6 @@
 {
   "name": "airjordan",
-  "version": "1.0",
+  "version": "0",
   "description": "Building Air Jordan component with MERN",
   "author": "Pouya Ghazvini",
   "license": "N/A",
@@ -10,9 +10,13 @@
   "scripts": {
     "eslnt": "eslint --ignore-path .gitignore . --fix"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
