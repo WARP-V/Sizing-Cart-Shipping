@@ -1,6 +1,7 @@
 const db = require('./index.jsx');
-const Size = require('./sizes.jsx').Size;
-const Descrition = require('./descriptions.jsx').Description;
+const SizeCollection = require('./sizes.jsx');
+const DescriptionCollection = require('./descriptions.jsx');
+
 
 const shoeIDs = ['310805-408', '310806-408', '310806-002', '305381-113', '852542-306', '554724-062', '554724-113', '554724-071', '554724-610', '554724-050',
   '554724-109', 'AR4491-001', 'AR4491-700', 'AV3922-601', 'AV3922-348', 'AV3922-001', 'AT3146-001', 'AV1200-600', 'AV1200-007', 'AV1200-008',
@@ -17,18 +18,26 @@ const shoeIDs = ['310805-408', '310806-408', '310806-002', '305381-113', '852542
   'AQ9084-063', 'AQ9084-006', 'AQ9084-100', 'AQ9084-300', 'AQ9084-010'
 ];
 
-let availableSizes = [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18];
 
 const randomSizesGenerator = (dataSetSize, minValue, maxValue) => {
   return new Array(dataSetSize).fill(0).map(function(n) {
-    return Math.round(Math.random() * ((2 * maxValue) - (2*minValue)) + (2*minValue))/2;
+    return Math.round(Math.random() * ((2 * maxValue) - (2 * minValue)) + (2 * minValue))/2;
   });
 };
   
-const shoeSizes = () => {
-  let shoeSizesObject = {};
-  for(let i = 0; i < shoeIDs.length; i++) {
-    shoeSizesObject[shoeIDs[i]] = randomSizesGenerator(18, 7, 18); 
+
+let shoeSizesArray = [];
+for(let i = 0; i < shoeIDs.length; i++) {
+  shoeSizesArray.push({shoeID: shoeIDs[i],  sizes: randomSizesGenerator(18, 7, 18)}); 
+};
+
+
+SizeCollection.insertMany(shoeSizesArray, (err, documents) => {
+  console.log(documents);
+  if(err) {
+    console.log(err);
+  } else {
+    console.log('Finished Database Seeding');
   }
-  return shoeSizesObject;
-}
+  process.exit();
+});
