@@ -1,6 +1,6 @@
-const db = require('./index.js');
-const Size = require('.sizes.js').Size;
-const Descrition = require('./descriptions').Description;
+const db = require('./index.jsx');
+const Size = require('./sizes.jsx').Size;
+const Descrition = require('./descriptions.jsx').Description;
 
 const shoeIDs = ['310805-408', '310806-408', '310806-002', '305381-113', '852542-306', '554724-062', '554724-113', '554724-071', '554724-610', '554724-050',
   '554724-109', 'AR4491-001', 'AR4491-700', 'AV3922-601', 'AV3922-348', 'AV3922-001', 'AT3146-001', 'AV1200-600', 'AV1200-007', 'AV1200-008',
@@ -16,3 +16,22 @@ const shoeIDs = ['310805-408', '310806-408', '310806-002', '305381-113', '852542
   'AH8109-002', 'AO1561-003', 'AO1561-117', 'AO1561-010', 'AO1561-011', 'AO1561-107', 'AO1560-010', 'AO1560-117', 'AA1253-105', 'AA1253-400',
   'AQ9084-063', 'AQ9084-006', 'AQ9084-100', 'AQ9084-300', 'AQ9084-010'
 ];
+
+let availableSizes = [7, 7.5, 8, 8, 8, 8.5, 9, 9, 9, 9.5, 10, 10, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18];
+
+const randomSizesGenerator = () => {
+  let sizesArray = [];
+  let maxSize = 18;
+  for (let i = 7; i <= maxSize; i+.5) {
+    sizesArray.push(Math.floor(Math.random(i)));
+  }
+  console.log(sizesArray);
+  return sizesArray;
+};
+  
+const shoeSizes = () => {
+  let shoeSizesArray = [];
+  for(let i = 0; i < shoeIDs.length; i++) {
+
+  }
+}
