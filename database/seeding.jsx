@@ -21,13 +21,14 @@ let availableSizes = [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 
 
 const randomSizesGenerator = (dataSetSize, minValue, maxValue) => {
   return new Array(dataSetSize).fill(0).map(function(n) {
-    return Math.round(Math.random() * (maxValue - minValue) + minValue);
+    return Math.round(Math.random() * ((2 * maxValue) - (2*minValue)) + (2*minValue))/2;
   });
 };
   
 const shoeSizes = () => {
-  let shoeSizesArray = [];
+  let shoeSizesObject = {};
   for(let i = 0; i < shoeIDs.length; i++) {
-
+    shoeSizesObject[shoeIDs[i]] = randomSizesGenerator(18, 7, 18); 
   }
+  return shoeSizesObject;
 }
