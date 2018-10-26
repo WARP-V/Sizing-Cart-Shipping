@@ -17,16 +17,12 @@ const shoeIDs = ['310805-408', '310806-408', '310806-002', '305381-113', '852542
   'AQ9084-063', 'AQ9084-006', 'AQ9084-100', 'AQ9084-300', 'AQ9084-010'
 ];
 
-let availableSizes = [7, 7.5, 8, 8, 8, 8.5, 9, 9, 9, 9.5, 10, 10, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18];
+let availableSizes = [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18];
 
-const randomSizesGenerator = () => {
-  let sizesArray = [];
-  let maxSize = 18;
-  for (let i = 7; i <= maxSize; i+.5) {
-    sizesArray.push(Math.floor(Math.random(i)));
-  }
-  console.log(sizesArray);
-  return sizesArray;
+const randomSizesGenerator = (dataSetSize, minValue, maxValue) => {
+  return new Array(dataSetSize).fill(0).map(function(n) {
+    return Math.round(Math.random() * (maxValue - minValue) + minValue);
+  });
 };
   
 const shoeSizes = () => {
