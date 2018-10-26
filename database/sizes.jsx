@@ -11,4 +11,4 @@ let sizingSchema = new Schema({
 
 const SizeCollection = mongoose.model('SizeCollection', sizingSchema);
 
-module.exports.SizeCollection = SizeCollection;
+module.exports = SizeCollection;

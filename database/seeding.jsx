@@ -1,6 +1,6 @@
 const db = require('./index.jsx');
-const SizeCollection = require('./sizes.jsx').SizeCollection;
-const DescritionCollection = require('./descriptions.jsx').DescriptionCollection;
+const SizeCollection = require('./sizes.jsx');
+const DescriptionCollection = require('./descriptions.jsx');
 
 
 const shoeIDs = ['310805-408', '310806-408', '310806-002', '305381-113', '852542-306', '554724-062', '554724-113', '554724-071', '554724-610', '554724-050',
@@ -31,8 +31,6 @@ for(let i = 0; i < shoeIDs.length; i++) {
   shoeSizesArray.push({shoeID: shoeIDs[i],  sizes: randomSizesGenerator(18, 7, 18)}); 
 };
 
-
-console.log(shoeSizesArray);
 
 SizeCollection.insertMany(shoeSizesArray, (err, documents) => {
   console.log(documents);
