@@ -19,16 +19,20 @@ const shoeIDs = ['310805-408', '310806-408', '310806-002', '305381-113', '852542
 ];
 
 
-const randomSizesGenerator = (dataSetSize, minValue, maxValue) => {
-  return new Array(dataSetSize).fill(0).map(function(n) {
+const randomSizesGenerator = (countOfSizes, minValue, maxValue) => {
+  return new Array(countOfSizes).fill(0).map(function(n) {
     return Math.round(Math.random() * ((2 * maxValue) - (2 * minValue)) + (2 * minValue))/2;
   });
 };
   
 
 let shoeSizesArray = [];
+let minValue = 7;
+let maxValue = 18;
+let countOfSizes = 18;
+
 for(let i = 0; i < shoeIDs.length; i++) {
-  shoeSizesArray.push({shoeID: shoeIDs[i],  sizes: randomSizesGenerator(18, 7, 18)}); 
+  shoeSizesArray.push({shoeID: shoeIDs[i],  sizes: randomSizesGenerator(countOfSizes, minValue, maxValue)}); 
 };
 
 
