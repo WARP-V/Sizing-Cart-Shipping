@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-const db = require('./index.jsx').db;
+const db = require('./index.js').db;
 mongoose.promise = global.Promise;
 
 let descriptionSchema = new Schema({
