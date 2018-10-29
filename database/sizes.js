@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 const db = require('./index.js');
-mongoose.promise = global.Promise;
 
 let sizingSchema = new Schema({
-  shoeId: {type: Number, unique: true},
+  shoeId: {type: String, unique: true},
   sizes: [Number]
 });
 

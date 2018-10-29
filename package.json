@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "eslnt": "eslint --ignore-path .gitignore . --fix",
-    "db": "node database/seeding.jsx"
+    "db": "node database/seeding.js"
   },
   "dependencies": {
     "express": "^4.16.4",

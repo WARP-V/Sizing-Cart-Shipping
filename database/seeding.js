@@ -25,13 +25,7 @@ const shoeIDs = [
 
 const randomSizesGenerator = (countOfSizes, minValue, maxValue) => {
   return new Array(countOfSizes).fill(0).map(function(n) {
-    return Math.round(
-                      Math.random() 
-                      * ((2 * maxValue) 
-                      - (2 * minValue)) 
-                      + (2 * minValue)
-                      )
-                      / 2;
+    return Math.round(Math.random() * ((2 * maxValue) - (2 * minValue)) + (2 * minValue)) / 2;
   });
 };
   
@@ -40,12 +34,10 @@ let shoeSizesArray = [], minValue = 7, maxValue = 18, countOfSizes = 18;
 
 
 for(let i = 0; i < shoeIDs.length; i++) {
-  shoeSizesArray.push(
-                      {
-                        shoeID: shoeIDs[i],  
+  shoeSizesArray.push({
+                        shoeId: shoeIDs[i],  
                         sizes: randomSizesGenerator(countOfSizes, minValue, maxValue)
-                      }
-  ); 
+  }); 
 };
 
 

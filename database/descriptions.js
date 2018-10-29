@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-const db = require('./index.js').db;
-mongoose.promise = global.Promise;
+const db = require('./index.js');
 
 let descriptionSchema = new Schema({
   shoeId: {type: Number, unique: true},
@@ -11,6 +10,6 @@ let descriptionSchema = new Schema({
 });
 
 
-const Description = mongoose.model('Description', descriptionSchema);
+const DescriptionCollection = mongoose.model('Description', descriptionSchema);
 
-module.exports.Description = Description;
+module.exports = DescriptionCollection;
