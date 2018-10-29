@@ -50,3 +50,18 @@ SizeCollection.insertMany(shoeSizesArray, (err, documents) => {
   }
   process.exit();
 });
+
+SizeCollection.deleteMany({}, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    SizeCollection.insertMany(shoeArr, (err, docs) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(`Finished seeding database with ${docs.length} docs`);
+      }
+      process.exit();
+    });
+  }
+});

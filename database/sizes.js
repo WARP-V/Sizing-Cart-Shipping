@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 const db = require('./index.js');
 
 let sizingSchema = new Schema({
-  shoeId: {type: String, unique: true},
+  shoeId: {type: String},
   sizes: [Number]
 });
 
