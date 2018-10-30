@@ -1,6 +1,6 @@
 const db = require('./index.js');
-const SizeCollection = require('./sizes.js');
-const DescriptionCollection = require('./descriptions.js');
+const Sizes = require('./sizes.js');
+const SizesAndDescription = require('./sizesanddescription.js');
 
 
 const shoeIDs = [
@@ -22,6 +22,8 @@ const shoeIDs = [
   'AQ9084-300', 'AQ9084-010'
 ];
 
+let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+let shown = 'Black/Sail/Gym Red/Gym Red'
 
 const randomSizesGenerator = (countOfSizes, minValue, maxValue) => {
   return new Array(countOfSizes).fill(0).map(function(n) {
@@ -30,36 +32,30 @@ const randomSizesGenerator = (countOfSizes, minValue, maxValue) => {
 };
   
 
-let shoeSizesArray = [], minValue = 7, maxValue = 18, countOfSizes = 18;
+let sizesAndDescriptionSchema = [], minValue = 7, maxValue = 18, countOfSizes = 18;
 
 
 for(let i = 0; i < shoeIDs.length; i++) {
-  shoeSizesArray.push({
-                        shoeId: shoeIDs[i],  
-                        sizes: randomSizesGenerator(countOfSizes, minValue, maxValue)
+  sizesAndDescriptionSchema.push({
+    shoeId: shoeIDs[i],  
+    sizes: randomSizesGenerator(countOfSizes, minValue, maxValue),
+    style: shoeIDs[i],
+    description: description,
+    shown: shown
   }); 
 };
 
 
-SizeCollection.insertMany(shoeSizesArray, (err, documents) => {
-  console.log(documents);
-  if(err) {
-    console.log(err);
-  } else {
-    console.log('Finished Database Seeding');
-  }
-  process.exit();
-});
-
-SizeCollection.deleteMany({}, (err) => {
+SizesAndDescription.deleteMany({}, (err) => {
   if (err) {
     console.log(err);
   } else {
-    SizeCollection.insertMany(shoeArr, (err, docs) => {
+    SizesAndDescription.insertMany(sizesAndDescriptionSchema, (err, documents) => {
+      console.log(documents);
       if (err) {
         console.log(err);
       } else {
-        console.log(`Finished seeding database with ${docs.length} docs`);
+        console.log(`Finished database seeding with ${documents.length} docs`);
       }
       process.exit();
     });
