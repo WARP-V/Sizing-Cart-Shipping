@@ -1,5 +1,4 @@
 const db = require('./index.js');
-const Sizes = require('./sizes.js');
 const SizesAndDescription = require('./sizesanddescription.js');
 
 
