@@ -8,9 +8,10 @@ app.use(express.static(__dirname + '../client/dist'));
 app.use(bodyParser.json());
 
 
-app.get('/sizes/:shoeID', (req, res) => {
-  const { shoeID } = req.params;
-  getSizes(shoeID, (error, sizes) => {
+app.get('/sizes/:shoeId', (req, res) => {
+  console.log(req.params);
+  const { shoeId } = req.params;
+  getSizes(shoeId, (error, sizes) => {
     if(error) {
       res.sendStatus(500);
     } else {
@@ -19,9 +20,9 @@ app.get('/sizes/:shoeID', (req, res) => {
   });
 }); 
 
-app.get('/description/:shoeID', (req, res) => {
-  const { shoeID } = req.params;
-  getDescription(shoeID, (error, description) => {
+app.get('/description/:shoeId', (req, res) => {
+  const { shoeId } = req.params;
+  getDescription(shoeId, (error, description) => {
     if(error) {
       res.sendStatus(500);
     } else {

@@ -14,6 +14,7 @@ const SizesAndDescription = mongoose.model('SizesAndDescription', sizesAndDescri
 
 const getSizes = (shoeId, callback) => {
   SizesAndDescription.find({ shoeId }, (error, documents) => {
+    console.log(documents);
     if(error) {
       callback(error, null);
     } else {
