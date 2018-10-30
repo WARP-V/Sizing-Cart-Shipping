@@ -14,7 +14,18 @@ app.get('/sizes/:shoeID', (req, res) => {
     if(error) {
       res.sendStatus(500);
     } else {
-      res.sendStatus(200).send(sizes).end();
+      res.send(sizes);
+    }
+  });
+}); 
+
+app.get('/description/:shoeID', (req, res) => {
+  const { shoeID } = req.params;
+  getDescription(shoeID, (error, description) => {
+    if(error) {
+      res.sendStatus(500);
+    } else {
+      res.send(description);
     }
   });
 }); 

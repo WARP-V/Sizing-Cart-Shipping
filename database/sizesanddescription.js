@@ -12,22 +12,23 @@ let sizesAndDescriptionSchema = new Schema({
 
 const SizesAndDescription = mongoose.model('SizesAndDescription', sizesAndDescriptionSchema);
 
-const getSizes = (shoeID, callback) => {
-  SizesAndDescription.find({ shoeID }, (error, documents) => {
+const getSizes = (shoeId, callback) => {
+  SizesAndDescription.find({ shoeId }, (error, documents) => {
     if(error) {
       callback(error, null);
     } else {
-      callback(null, documents);
+      callback(null, documents[0].sizes);
     }
   });
 };
 
-const getDescription = (shoeID, callback) => {
-  SizesAndDescription.find({ shoeID }, (error, documents) => {
+const getDescription = (shoeId, callback) => {
+  SizesAndDescription.find({ shoeId }, (error, documents) => {
+    console.log(documents);
     if(error) {
       return callback(error, null);
     } else {
-      callback(null, documents);
+      callback(null, [documents[0].style, documents[0].shown, documents[0].description]);
     }
   });
 }
