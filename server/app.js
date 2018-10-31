@@ -3,8 +3,9 @@ const app = express();
 const bodyParser = require('body-parser');
 const getSizes = require('../database/sizesanddescription.js').getSizes;
 const getDescription = require('../database/sizesanddescription.js').getDescription;
+const path = require('path');
 
-app.use(express.static(__dirname + '../client/dist'));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(bodyParser.json());
 
 
