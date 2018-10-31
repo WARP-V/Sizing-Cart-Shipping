@@ -24,7 +24,9 @@ class App extends React.Component {
     let { shoeId } = this.state;
     axios.get(`/sizes/${shoeId}`)
       .then((response) => {
+        console.log(response);
         let sizes = response.data;
+        console.log(sizes);
         this.setState({ sizes });
       });
   }

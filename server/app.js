@@ -10,8 +10,10 @@ app.use(bodyParser.json());
 
 
 app.get('/sizes/:shoeId', (req, res) => {
-  const { shoeId } = req.params;
+  console.log(req.params);
+  let { shoeId } = req.params;
   getSizes(shoeId, (error, sizes) => {
+    console.log(sizes);
     if(error) {
       res.sendStatus(500);
     } else {
@@ -21,7 +23,7 @@ app.get('/sizes/:shoeId', (req, res) => {
 }); 
 
 app.get('/description/:shoeId', (req, res) => {
-  const { shoeId } = req.params;
+  let { shoeId } = req.params;
   getDescription(shoeId, (error, description) => {
     if(error) {
       res.sendStatus(500);
