@@ -13,6 +13,29 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.getSizes();
+    this.getDescription();
+  }
+
+  getSizes() {
+    let { shoeId } = this.state;
+    axios.get(`/sizes/${shoeId}`)
+      .then((response) => {
+        let sizes = response.data;
+        this.setState({ sizes });
+      });
+  }
+
+  getDescription() {
+    let { shoeId } = this.state;
+    axios.get(`/description/${shoeId}`)
+      .then((response) => {
+        let description = response.data;
+        this.setState({ description });
+      });
+  }
+
   render() {
     return (
       <div>Rendering App Component
