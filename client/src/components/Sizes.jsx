@@ -4,18 +4,20 @@ import $ from 'jquery';
 
 class Sizes extends React.Component {
   constructor(props) {
-    console.log(props);
     super(props);
     this.state = {
-
+      
     }
   }
   
   
   render() {
+    console.log(this.props);
     return (
-     <div>
-
+     <div className="sizes-table">
+      {this.props.sizes.map(function(size){
+        return <button>{size}</button>
+      })}
      </div> 
     )
   }

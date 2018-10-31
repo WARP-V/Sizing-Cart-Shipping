@@ -11,10 +11,8 @@ app.use(bodyParser.json());
 
 
 app.get('/sizes/:shoeId', (req, res) => {
-  console.log(req.params);
   let { shoeId } = req.params;
   getSizes(shoeId, (error, sizes) => {
-    console.log(sizes);
     if(error) {
       res.sendStatus(500);
     } else {

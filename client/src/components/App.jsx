@@ -21,18 +21,16 @@ class App extends React.Component {
   }
 
   getSizes() {
-    let { shoeId } = this.state;
+    const { shoeId } = this.state;
     axios.get(`/sizes/${shoeId}`)
       .then((response) => {
-        console.log(response);
         let sizes = response.data;
-        console.log(sizes);
         this.setState({ sizes });
       });
   }
 
   getDescription() {
-    let { shoeId } = this.state;
+    const { shoeId } = this.state;
     axios.get(`/description/${shoeId}`)
       .then((response) => {
         let description = response.data;
