@@ -33,5 +33,4 @@ const getDescription = (shoeId, callback) => {
 }
 
 
-module.exports.getSizes = getSizes;
-module.exports.getDescription = getDescription;
+module.exports = SizesAndDescription;
