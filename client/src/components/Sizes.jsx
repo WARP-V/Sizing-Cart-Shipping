@@ -4,6 +4,7 @@ import $ from 'jquery';
 
 class Sizes extends React.Component {
   constructor(props) {
+    console.log(props);
     super(props);
     this.state = {
 

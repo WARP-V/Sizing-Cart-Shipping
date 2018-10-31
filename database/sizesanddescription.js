@@ -24,7 +24,6 @@ const getSizes = (shoeId, callback) => {
 
 const getDescription = (shoeId, callback) => {
   SizesAndDescription.find({ shoeId }, (error, documents) => {
-    console.log(documents);
     if(error) {
       return callback(error, null);
     } else {

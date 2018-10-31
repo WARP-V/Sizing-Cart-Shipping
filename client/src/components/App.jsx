@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import axios from 'axios';
 import $ from 'jquery';
 import Sizes from './Sizes.jsx';
 import Description from './Description.jsx';
@@ -9,7 +10,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       sizes: [],
-      description: ''
+      description: '',
+      shoeId: '310805-408'
     };
   }
 
@@ -38,8 +40,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>Rendering App Component
-        
+      <div id="sizesAnddescription">
+        <Sizes sizes={this.state.sizes}/>
+        <Description description={this.state.description}/>        
       </div> 
     );
   }
