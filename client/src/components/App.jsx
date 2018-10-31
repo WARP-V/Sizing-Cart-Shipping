@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+<<<<<<< HEAD
 import axios from 'axios';
+=======
+>>>>>>> f123ba2320a2a2ac473feff6d1643129790e19a7
 import $ from 'jquery';
 import Sizes from './Sizes.jsx';
 import Description from './Description.jsx';
@@ -10,6 +13,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       sizes: [],
+<<<<<<< HEAD
       description: '',
       shoeId: '310805-408'
     };
@@ -45,6 +49,16 @@ class App extends React.Component {
       <div id="sizesAnddescription">
         <Sizes sizes={this.state.sizes}/>
         <Description description={this.state.description}/>        
+=======
+      description: ''
+    };
+  }
+
+  render() {
+    return (
+      <div>Rendering App Component
+        
+>>>>>>> f123ba2320a2a2ac473feff6d1643129790e19a7
       </div> 
     );
   }
