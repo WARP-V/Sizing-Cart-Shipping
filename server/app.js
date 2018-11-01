@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -11,25 +12,25 @@ app.use(bodyParser.json());
 
 
 app.get('/sizes/:shoeId', (req, res) => {
-  let { shoeId } = req.params;
+  const { shoeId } = req.params;
   getSizes(shoeId, (error, sizes) => {
-    if(error) {
+    if (error) {
       res.sendStatus(500);
     } else {
       res.send(sizes);
     }
   });
-}); 
+});
 
 app.get('/description/:shoeId', (req, res) => {
-  let { shoeId } = req.params;
+  const { shoeId } = req.params;
   getDescription(shoeId, (error, description) => {
-    if(error) {
+    if (error) {
       res.sendStatus(500);
     } else {
       res.send(description);
     }
   });
-}); 
+});
 
 module.exports = app;

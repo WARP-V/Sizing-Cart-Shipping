@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import axios from 'axios';
-import $ from 'jquery';
 import Sizes from './Sizes.jsx';
 import Description from './Description.jsx';
 
