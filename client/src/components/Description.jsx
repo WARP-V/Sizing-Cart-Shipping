@@ -14,11 +14,20 @@ class Description extends React.Component {
   render() {
     console.log(this.props);
     return (
-     <div>
-     {this.props.description[2]}<br/>
-     Shown: {this.props.description[1]}<br/>
-     Style: {this.props.description[0]}<br/>
-     </div> 
+      <div className="description">
+        <p>
+          <div className="description-paragraph">
+            {this.props.description[2]}
+          </div>
+        </p>
+        <div className="description-details">
+          <ul class="details">
+            Shown: {this.props.description[1]}<br/>
+            Style: {this.props.description[0]}
+          </ul>
+        </div>
+      </div> 
+
     )
   }
 }
