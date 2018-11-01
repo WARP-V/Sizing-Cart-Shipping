@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Sizes from './Sizes.jsx';
-import Description from './Description.jsx';
+import Sizes from './Sizes';
+import Description from './Description';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class App extends React.Component {
     this.state = {
       sizes: [],
       description: '',
-      shoeId: '310805-408'
+      shoeId: '310805-408',
     };
   }
 
@@ -19,31 +19,33 @@ class App extends React.Component {
   }
 
   getSizes() {
-    const shoeId = this.state.shoeId;
+    const { shoeId } = this.state;
     axios.get(`/sizes/${shoeId}`)
       .then((response) => {
-        let sizes = response.data;
+        const sizes = response.data;
         this.setState({ sizes });
       });
   }
 
   getDescription() {
-    const shoeId  = this.state.shoeId;
+    const { shoeId } = this.state;
     axios.get(`/description/${shoeId}`)
       .then((response) => {
-        let description = response.data;
+        const description = response.data;
         this.setState({ description });
       });
   }
 
   render() {
+    const { sizes } = this.state;
+    const { description } = this.state;
     return (
       <div id="sizesAndDescription">
-        <Sizes sizes={this.state.sizes}/>
-        <Description description={this.state.description}/>        
-      </div> 
+        <Sizes sizes={sizes} />
+        <Description description={description} />
+      </div>
     );
   }
-};
+}
 
 export default App;
