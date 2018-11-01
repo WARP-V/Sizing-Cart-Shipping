@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
-let Schema = mongoose.Schema;
+
+const Schema = mongoose.Schema;
 const db = require('./index.js');
 
-let sizesAndDescriptionSchema = new Schema({
-  shoeId: {type: String},
+const sizesAndDescriptionSchema = new Schema({
+  shoeId: { type: String },
   sizes: [Number],
   style: String,
   description: String,
@@ -14,7 +15,7 @@ const SizesAndDescription = mongoose.model('SizesAndDescription', sizesAndDescri
 
 const getSizes = (shoeId, callback) => {
   SizesAndDescription.find({ shoeId }, (error, documents) => {
-    if(error) {
+    if (error) {
       callback(error, null);
     } else {
       callback(null, documents[0].sizes);
@@ -24,13 +25,12 @@ const getSizes = (shoeId, callback) => {
 
 const getDescription = (shoeId, callback) => {
   SizesAndDescription.find({ shoeId }, (error, documents) => {
-    if(error) {
+    if (error) {
       return callback(error, null);
-    } else {
-      callback(null, [documents[0].style, documents[0].shown, documents[0].description]);
     }
+    callback(null, [documents[0].style, documents[0].shown, documents[0].description]);
   });
-}
+};
 
 
 module.exports = SizesAndDescription;
