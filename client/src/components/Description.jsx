@@ -7,7 +7,6 @@ class Description extends React.Component {
 
 
   render() {
-    console.log(this.props);
     return (
       <div className="description">
         <div className="description-paragraph">

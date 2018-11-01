@@ -47,7 +47,6 @@ SizesAndDescription.deleteMany({}, (err) => {
     console.log(err);
   } else {
     SizesAndDescription.insertMany(sizesAndDescriptionSchema, (err, documents) => {
-      console.log(documents);
       if (err) {
         console.log(err);
       } else {

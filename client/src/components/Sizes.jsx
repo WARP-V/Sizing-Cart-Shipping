@@ -7,7 +7,6 @@ class Sizes extends React.Component {
   
   
   render() {
-    console.log(this.props);
     return (
      <div className="sizes-table">
       {this.props.sizes.map(function(size, i) {
