@@ -1,20 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class Sizes extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  
-  
-  render() {
-    return (
-     <div className="sizes-table">
-      {this.props.sizes.map(function(size, i) {
-        return <button className='sizes-buttons' key={i}>{size}</button>
-      })}
-     </div> 
-    )
-  }
-}
+const Sizes = ({ sizes }) => (
+  <div className="sizes-table">
+    {sizes.map((size, i) => <button type="button" className="sizes-buttons" key={`size_${i + 1}`}>{size}</button>)}
+  </div>
+);
 
 export default Sizes;
+
+Sizes.propTypes = {
+  sizes: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
+};
+
+Sizes.defaultProps = {
+  sizes: [['no sizes']],
+};
