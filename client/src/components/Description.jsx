@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import $ from 'jquery';
 
 class Description extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-
-    }
   }
 
 
@@ -15,19 +10,18 @@ class Description extends React.Component {
     console.log(this.props);
     return (
       <div className="description">
-        <p>
-          <div className="description-paragraph">
+        <div className="description-paragraph">
+          <p>
             {this.props.description[2]}
-          </div>
-        </p>
+          </p>
+        </div>
         <div className="description-details">
-          <ul class="details">
+          <ul className="details">
             Shown: {this.props.description[1]}<br/>
             Style: {this.props.description[0]}
           </ul>
         </div>
       </div> 
-
     )
   }
 }

@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   getSizes() {
-    const { shoeId } = this.state;
+    const shoeId = this.state.shoeId;
     axios.get(`/sizes/${shoeId}`)
       .then((response) => {
         let sizes = response.data;
@@ -30,7 +30,7 @@ class App extends React.Component {
   }
 
   getDescription() {
-    const { shoeId } = this.state;
+    const shoeId  = this.state.shoeId;
     axios.get(`/description/${shoeId}`)
       .then((response) => {
         let description = response.data;
