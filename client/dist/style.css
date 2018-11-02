@@ -75,7 +75,6 @@ table {
 .sizes-table {
   float:right;
   width: 100%;
-  padding-bottom: 15px;
 }
 
 .sizes-buttons {
@@ -119,6 +118,7 @@ table {
   cursor: pointer;
   color: white;
   font-size: 18px;
+  margin-top: 40px;
 }
 
 .heart-button {
@@ -131,6 +131,7 @@ table {
   background: black;
   color: white;
   font-size: 18px;
+  margin-top: 40px;
 }
 
 .available {
@@ -149,10 +150,9 @@ table {
 }
 
 .description-paragraph {
-  padding-top: 15px;
+  padding-top: 16px;
   float: right;
   width: 100%;
-  position: relative;
   padding: auto;
   margin: auto;
 }
@@ -161,6 +161,10 @@ table {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   padding-right: 30px;
   font-size: 18px;
+  display: block;
+  font-stretch: 100%;
+  line-height: 27px;
+  padding-top: 16px;
 }
 
 .description-details {

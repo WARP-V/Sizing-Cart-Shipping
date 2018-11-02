@@ -20,7 +20,7 @@ const shoeIDs = [
   'AQ9084-300', 'AQ9084-010',
 ];
 
-const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+const description = "Featuring soft, lightweight cushioning, the Air Jordan Retro Men's Shoe offers performance-inspired comfort and iconic Air Jordan detailing.";
 const shown = 'Black/Sail/Gym Red/Gym Red';
 
 const randomSizesGenerator = (countOfSizes, minValue, maxValue) => new Array(countOfSizes)
