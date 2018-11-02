@@ -23,14 +23,16 @@ const shoeIDs = [
 const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 const shown = 'Black/Sail/Gym Red/Gym Red';
 
-const randomSizesGenerator = (countOfSizes, minValue, maxValue) => new Array(countOfSizes).fill(0).map(n => Math.round(Math.random() * ((2 * maxValue) - (2 * minValue)) + (2 * minValue)) / 2);
+const randomSizesGenerator = (countOfSizes, minValue, maxValue) => new Array(countOfSizes)
+  .fill(0)
+  .map(n => Math.round(Math.random() * ((2 * maxValue) - (2 * minValue)) + (2 * minValue)) / 2);
 
 
 const sizesAndDescriptionSchema = []; const minValue = 7; const maxValue = 18; const
   countOfSizes = 18;
 
 
-for (let i = 0; i < shoeIDs.length; i + 1) {
+for (let i = 0; i < shoeIDs.length; i += 1) {
   sizesAndDescriptionSchema.push({
     shoeId: shoeIDs[i],
     sizes: randomSizesGenerator(countOfSizes, minValue, maxValue),
