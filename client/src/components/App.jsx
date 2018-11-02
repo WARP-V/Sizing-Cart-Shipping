@@ -62,7 +62,12 @@ class App extends React.Component {
     } = this.state;
     return (
       <div id="sizesAndDescription">
-        <Sizes sizes={sizes} curButton={curButton} setCurrent={this.setCurrent} defaultSizes={defaultSizes} />
+        <Sizes
+          sizes={sizes}
+          curButton={curButton}
+          setCurrent={this.setCurrent}
+          defaultSizes={defaultSizes}
+        />
         <div className="cart">
           <button type="button" className="cart-button">Add to Cart</button>
           <button type="button" className="heart-button" title="Add to Wishlist"><i className="material-icons">favorite</i></button>
