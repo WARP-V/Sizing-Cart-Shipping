@@ -13,11 +13,11 @@ const Row = ({ row, available }) => {
       })}
     </div>
   );
-}
+};
 
 
 export default Row;
 
 Row.defaultProps = {
   available: [],
-}
+};

@@ -10,7 +10,9 @@ class App extends React.Component {
     super(props);
     this.state = {
       sizes: [],
-      defaultSizes: _.chunk([7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18], 5),
+      defaultSizes: _.chunk(
+        [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18], 5,
+      ),
       description: '',
       shoeId: '310805-408',
     };
@@ -21,7 +23,6 @@ class App extends React.Component {
     this.getDescription();
   }
 
-  
   getSizes() {
     const { shoeId } = this.state;
     axios.get(`/sizes/${shoeId}`)
@@ -31,7 +32,7 @@ class App extends React.Component {
         this.setState({ sizes });
       });
   }
-  
+
   getDescription() {
     const { shoeId } = this.state;
     axios.get(`/description/${shoeId}`)
@@ -40,7 +41,7 @@ class App extends React.Component {
         this.setState({ description });
       });
   }
-  
+
   sortSizes(a, b) {
     return a - b;
   }
@@ -51,7 +52,7 @@ class App extends React.Component {
     const { defaultSizes } = this.state;
     return (
       <div id="sizesAndDescription">
-        <Sizes sizes={sizes} defaultSizes={defaultSizes}/>
+        <Sizes sizes={sizes} defaultSizes={defaultSizes} />
         <div className="cart">
           <button type="button" className="cart-button">Add to Cart</button>
           <button type="button" className="heart-button" title="Add to Wishlist">Heart</button>
