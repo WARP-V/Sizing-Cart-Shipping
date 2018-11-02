@@ -27,3 +27,4 @@ describe('Sizes', () => {
     expect(component).toMatchSnapshot();
   });
 });
+

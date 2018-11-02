@@ -1,3 +1,3 @@
 module.exports = {
-  get: jest.fn(() => Promise.resolve({ data: [{ imageUrls: ['test'] }] })),
+  get: jest.fn(() => Promise.resolve({ data: [{ sizes: ['test'] }] })),
 };
