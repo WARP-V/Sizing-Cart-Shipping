@@ -49,35 +49,103 @@ table {
 
 #sizesAndDescription {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  width: 180px;
+  width: 377px;
+  height: 213px;
   float: right;
   padding-right: 30px;
+  font-size: 10px;
+  color:black; 
+}
+
+.sizes-title {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+.sizes-guide {
+  float: right;
+  color: gray;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .sizes-table {
   float:right;
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .sizes-buttons {
   background-color: white;
+  height: 90%;
   width: 17%;
+  margin: 1px;
   border: lightgray;
   display: inline-block;
   padding: 1px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  align-content: center;
+}
+
+.sizes-buttons:hover {
+  border: 2px solid black;
+}
+
+.sizes-num {
+  display: inline-block;
+  margin: 25%;
+}
+
+
+.cart {
+  width: 377px;
+}
+
+.cart-button {
+  height: 25px;
+  width: calc(100% - 80px);
+  background: black;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.heart-button {
+  height: 25px;
+  width: 50px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  background: black;
+  color: white;
 }
 
 .available {
-  background: rgba(17, 17, 17, 0.3)
+  background: rgba(221, 221, 221, 0.5)
 }
+
+.available .sizes-num {
+  color: rgb(221, 221, 221)
+}
+
 
 .row {
   width: 100%;
+  height: 48px;
 }
 
 .description-paragraph {
+  padding-top: 15px;
   float: right;
   width: 100%;
   position: relative;
@@ -85,13 +153,32 @@ table {
   margin: auto;
 }
 
+.description-paragraph p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
 .description-details {
+  padding-top: 20px;
   float:right;
   width:100%;
-  position: relative;
   padding: auto;
   margin: auto;
+  font-size: 16px;
 }
+
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+  
+.description-readmore {
+  padding-top: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 
 

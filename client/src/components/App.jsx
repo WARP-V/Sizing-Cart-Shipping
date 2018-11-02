@@ -21,22 +21,17 @@ class App extends React.Component {
     this.getDescription();
   }
 
-  sortSizes(a, b) {
-    return a - b;
-  }
-
+  
   getSizes() {
     const { shoeId } = this.state;
     axios.get(`/sizes/${shoeId}`)
       .then((response) => {
         let sizes = response.data;
-        //console.log("sizes:", sizes)
         sizes = sizes.sort(this.sortSizes);
-        console.log('sizes.sort', sizes);
         this.setState({ sizes });
       });
   }
-
+  
   getDescription() {
     const { shoeId } = this.state;
     axios.get(`/description/${shoeId}`)
@@ -45,16 +40,37 @@ class App extends React.Component {
         this.setState({ description });
       });
   }
+  
+  sortSizes(a, b) {
+    return a - b;
+  }
 
   render() {
     const { sizes } = this.state;
-    console.log("SIZES", sizes);
     const { description } = this.state;
     const { defaultSizes } = this.state;
     return (
       <div id="sizesAndDescription">
         <Sizes sizes={sizes} defaultSizes={defaultSizes}/>
+        <div className="cart">
+          <button type="button" className="cart-button">Add to Cart</button>
+          <button type="button" className="heart-button" title="Add to Wishlist">Heart</button>
+        </div>
         <Description description={description} />
+        <div className="description-details">
+          <ul className="details">
+            <li>
+            Shown:
+              { description[1] }
+            </li>
+            <br />
+            <li>
+            Style:
+              { description[0] }
+            </li>
+          </ul>
+          <div className="description-readmore">Read more</div>
+        </div>
       </div>
     );
   }

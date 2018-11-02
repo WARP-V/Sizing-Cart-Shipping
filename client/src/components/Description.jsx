@@ -9,15 +9,6 @@ const Description = ({ description }) => (
         { description[2] }
       </p>
     </div>
-    <div className="description-details">
-      <ul className="details">
-        Shown:
-        { description[1] }
-        <br />
-        Style:
-        { description[0] }
-      </ul>
-    </div>
   </div>
 );
 

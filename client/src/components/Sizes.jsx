@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import Row from './Row';
 
 const Sizes = ({ sizes, defaultSizes }) => {
-  console.log("sizes", sizes);
+  
   return (
-    <div className="sizes-table">
-      {defaultSizes.map((size, i) => <Row row={size} available={sizes}/>)}
+    <div className="sizes-info">
+      <div className="sizes-title">
+        <span>Select Size</span><span className="sizes-guide">Size Guide</span> 
+      </div>
+      <div className="sizes-table">
+        {defaultSizes.map((size, i) => <Row row={size} available={sizes}/>)}
+      </div>
     </div>
   )
 };
