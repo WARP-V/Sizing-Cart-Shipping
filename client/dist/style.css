@@ -98,11 +98,14 @@ table {
   margin: 1px;
 }
 
+.sizes-buttons:active {
+  background-color: black;
+}
+
 .sizes-num {
   display: inline-block;
   margin: 25%;
 }
-
 
 .cart {
   width: 377px;
@@ -188,5 +191,8 @@ li {
 }
 
 
-
+.current {
+  background-color: black;
+  color: white;
+}
 

@@ -6,8 +6,13 @@ import Description from './Description';
 const _ = require('lodash');
 
 class App extends React.Component {
+  static sortSizes(a, b) {
+    return a - b;
+  }
+
   constructor(props) {
     super(props);
+
     this.state = {
       sizes: [],
       defaultSizes: _.chunk(
@@ -15,7 +20,9 @@ class App extends React.Component {
       ),
       description: '',
       shoeId: '310805-408',
+      curButton: -1,
     };
+    this.setCurrent = this.setCurrent.bind(this);
   }
 
   componentDidMount() {
@@ -42,17 +49,18 @@ class App extends React.Component {
       });
   }
 
-  sortSizes(a, b) {
-    return a - b;
+
+  setCurrent(idx) {
+    const newState = this.state;
+    newState.curButton = idx;
+    this.setState(newState);
   }
 
   render() {
-    const { sizes } = this.state;
-    const { description } = this.state;
-    const { defaultSizes } = this.state;
+    const { sizes, curButton, description, defaultSizes } = this.state;
     return (
       <div id="sizesAndDescription">
-        <Sizes sizes={sizes} defaultSizes={defaultSizes} />
+        <Sizes sizes={sizes} curButton={curButton} setCurrent={this.setCurrent} defaultSizes={defaultSizes} />
         <div className="cart">
           <button type="button" className="cart-button">Add to Cart</button>
           <button type="button" className="heart-button" title="Add to Wishlist"><i className="material-icons">favorite</i></button>

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Row from './Row';
 
-const Sizes = ({ sizes, defaultSizes }) => {
+const Sizes = ({ sizes, defaultSizes, curButton, setCurrent }) => {
   
   return (
     <div className="sizes-info">
@@ -10,7 +10,7 @@ const Sizes = ({ sizes, defaultSizes }) => {
         <span>Select Size</span><span className="sizes-guide">Size Guide</span> 
       </div>
       <div className="sizes-table">
-        {defaultSizes.map((size, i) => <Row row={size} available={sizes}/>)}
+        {defaultSizes.map((size, i) => <Row row={size} change={(id) => { setCurrent(id + (i * 5)); }} curButton={curButton - (i * 5)} available={sizes}/>)}
       </div>
     </div>
   )
