@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541129787917" clover="3.2.0">
-  <project timestamp="1541129787917" name="All files">
-    <metrics statements="24" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="7" elements="34" coveredelements="28" complexity="0" loc="24" ncloc="24" packages="1" files="3" classes="3">
+<coverage generated="1541130086699" clover="3.2.0">
+  <project timestamp="1541130086699" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10" elements="34" coveredelements="34" complexity="0" loc="24" ncloc="24" packages="1" files="3" classes="3">
       <file name="App.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/App.jsx">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
         <line num="8" count="1" type="stmt"/>
@@ -21,17 +21,17 @@
         <line num="42" count="3" type="stmt"/>
       </file>
       <file name="Description.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Description.jsx">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
       </file>
       <file name="Sizes.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Sizes.jsx">
-        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
       </file>
