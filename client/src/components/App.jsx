@@ -57,7 +57,9 @@ class App extends React.Component {
   }
 
   render() {
-    const { sizes, curButton, description, defaultSizes } = this.state;
+    const {
+      sizes, curButton, description, defaultSizes,
+    } = this.state;
     return (
       <div id="sizesAndDescription">
         <Sizes sizes={sizes} curButton={curButton} setCurrent={this.setCurrent} defaultSizes={defaultSizes} />
