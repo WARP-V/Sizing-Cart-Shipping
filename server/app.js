@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
-const getSizes = require('../database/sizesanddescription.js').getSizes;
-const getDescription = require('../database/sizesanddescription.js').getDescription;
+const { getSizes } = require('../database/sizesanddescription.js');
+const { getDescription } = require('../database/sizesanddescription.js');
 
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
