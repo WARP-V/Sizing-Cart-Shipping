@@ -1,28 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class Description extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Description = ({ description }) => (
 
-
-  render() {
-    return (
-      <div className="description">
-        <div className="description-paragraph">
-          <p>
-            {this.props.description[2]}
-          </p>
-        </div>
-        <div className="description-details">
-          <ul className="details">
-            Shown: {this.props.description[1]}<br/>
-            Style: {this.props.description[0]}
-          </ul>
-        </div>
-      </div> 
-    )
-  }
-}
+  <div className="description">
+    <div className="description-paragraph">
+      <p>
+        { description[2] }
+      </p>
+    </div>
+    <div className="description-details">
+      <ul className="details">
+        Shown:
+        { description[1] }
+        <br />
+        Style:
+        { description[0] }
+      </ul>
+    </div>
+  </div>
+);
 
 export default Description;
+
+Description.propTypes = {
+  description: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
+};
+
+Description.defaultProps = {
+  description: ['no description'],
+};
