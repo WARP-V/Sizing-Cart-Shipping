@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
-
-const Schema = mongoose.Schema;
 const db = require('./index.js');
 
-const sizesAndDescriptionSchema = new Schema({
+const sizesAndDescriptionSchema = new mongoose.Schema({
   shoeId: { type: String },
   sizes: [Number],
   style: String,
@@ -28,7 +26,7 @@ const getDescription = (shoeId, callback) => {
     if (error) {
       return callback(error, null);
     }
-    callback(null, [documents[0].style, documents[0].shown, documents[0].description]);
+    return callback(null, [documents[0].style, documents[0].shown, documents[0].description]);
   });
 };
 
