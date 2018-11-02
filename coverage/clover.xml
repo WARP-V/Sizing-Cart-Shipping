@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541130086699" clover="3.2.0">
-  <project timestamp="1541130086699" name="All files">
+<coverage generated="1541178982978" clover="3.2.0">
+  <project timestamp="1541178982978" name="All files">
     <metrics statements="24" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10" elements="34" coveredelements="34" complexity="0" loc="24" ncloc="24" packages="1" files="3" classes="3">
       <file name="App.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/App.jsx">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>

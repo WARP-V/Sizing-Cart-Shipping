@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Row from './Row';
 
-const Sizes = ({ sizes }) => (
-  <div className="sizes-table">
-    {sizes.map((size, i) => <button type="button" className="sizes-buttons" key={`size_${i + 1}`}>{size}</button>)}
-  </div>
-);
+const Sizes = ({ sizes, defaultSizes }) => {
+  console.log("sizes", sizes);
+  return (
+    <div className="sizes-table">
+      {defaultSizes.map((size, i) => <Row row={size} available={sizes}/>)}
+    </div>
+  )
+};
 
 export default Sizes;
 
