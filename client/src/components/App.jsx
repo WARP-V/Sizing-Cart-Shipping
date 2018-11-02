@@ -55,7 +55,7 @@ class App extends React.Component {
         <Sizes sizes={sizes} defaultSizes={defaultSizes} />
         <div className="cart">
           <button type="button" className="cart-button">Add to Cart</button>
-          <button type="button" className="heart-button" title="Add to Wishlist">Heart</button>
+          <button type="button" className="heart-button" title="Add to Wishlist"><i className="material-icons">favorite</i></button>
         </div>
         <Description description={description} />
         <div className="description-details">
