@@ -1,4 +1,3 @@
-const db = require('./index.js');
 const SizesAndDescription = require('./sizesanddescription.js');
 
 
@@ -31,7 +30,7 @@ const sizesAndDescriptionSchema = []; const minValue = 7; const maxValue = 18; c
   countOfSizes = 18;
 
 
-for (let i = 0; i < shoeIDs.length; i++) {
+for (let i = 0; i < shoeIDs.length; i + 1) {
   sizesAndDescriptionSchema.push({
     shoeId: shoeIDs[i],
     sizes: randomSizesGenerator(countOfSizes, minValue, maxValue),
@@ -42,9 +41,9 @@ for (let i = 0; i < shoeIDs.length; i++) {
 }
 
 
-SizesAndDescription.deleteMany({}, (err) => {
-  if (err) {
-    console.log(err);
+SizesAndDescription.deleteMany({}, (error) => {
+  if (error) {
+    console.log(error);
   } else {
     SizesAndDescription.insertMany(sizesAndDescriptionSchema, (err, documents) => {
       if (err) {
