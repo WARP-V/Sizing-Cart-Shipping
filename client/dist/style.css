@@ -82,7 +82,7 @@ table {
   background-color: white;
   height: 90%;
   width: 17%;
-  margin: 1px;
+  margin: 2px;
   border: lightgray;
   display: inline-block;
   padding: 1px;
@@ -96,6 +96,7 @@ table {
 
 .sizes-buttons:hover {
   border: 2px solid black;
+  margin: 1px;
 }
 
 .sizes-num {
@@ -109,7 +110,7 @@ table {
 }
 
 .cart-button {
-  height: 25px;
+  height: 30.85px;
   width: calc(100% - 80px);
   background: black;
   display: inline-block;
@@ -117,10 +118,11 @@ table {
   text-align: center;
   cursor: pointer;
   color: white;
+  font-size: 18px;
 }
 
 .heart-button {
-  height: 25px;
+  height: 30.85px;
   width: 50px;
   display: inline-block;
   vertical-align: top;
@@ -128,6 +130,7 @@ table {
   cursor: pointer;
   background: black;
   color: white;
+  font-size: 18px;
 }
 
 .available {
@@ -142,6 +145,7 @@ table {
 .row {
   width: 100%;
   height: 48px;
+  margin: 3px;
 }
 
 .description-paragraph {
