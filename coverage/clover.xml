@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541211160487" clover="3.2.0">
-  <project timestamp="1541211160488" name="All files">
+<coverage generated="1541279420500" clover="3.2.0">
+  <project timestamp="1541279420501" name="All files">
     <metrics statements="38" coveredstatements="33" conditionals="4" coveredconditionals="2" methods="16" coveredmethods="12" elements="58" coveredelements="47" complexity="0" loc="38" ncloc="38" packages="1" files="4" classes="4">
       <file name="App.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/App.jsx">
         <metrics statements="25" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="7"/>
@@ -37,20 +37,20 @@
         <line num="17" count="1" type="stmt"/>
       </file>
       <file name="Row.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Row.jsx">
-        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="7" count="12" type="stmt"/>
-        <line num="10" count="54" type="stmt"/>
-        <line num="11" count="0" type="cond" truecount="2" falsecount="2"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="9" count="54" type="cond" truecount="2" falsecount="2"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
       <file name="Sizes.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Sizes.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
-        <line num="16" count="13" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
