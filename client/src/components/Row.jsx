@@ -6,7 +6,7 @@ const Row = ({
 }) => (
   <div className="row">
     {row.map((item, i) => (
-      <div className={`sizes-buttons ${i === curButton ? 'current' : ''} ${!available.includes(item) ? 'available' : ''}`} onClick={() => (change(i))} key={`size_${i + 1}`} onKeyPress={this.handleKeyPress} role="button" tabIndex="-1">
+      <div className={`sizes-buttons ${i === curButton ? 'current' : ''} ${!available.includes(item) ? 'available' : ''}`} onClick={() => (change(i))} key={`size_${i + 1}`} onKeyPress={this} role="button" tabIndex="-1">
         <div className="sizes-num">{item}</div>
       </div>
     ))}
