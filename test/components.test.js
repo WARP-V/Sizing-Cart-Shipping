@@ -6,34 +6,35 @@ import React from 'react';
 import App from '../client/src/components/App';
 import Sizes from '../client/src/components/Sizes';
 import Description from '../client/src/components/Description';
+import Row from '../client/src/components/Row';
 
 configure({ adapter: new Adapter() });
 
 describe('App', () => {
   const wrapper1 = shallow(<App />);
   it('should render a shallow copy of App', () => {
-    expect(wrapper1.exists()).toBeTruthy(); 
+    expect(wrapper1.exists()).toBeTruthy();
   });
 });
 
 describe('Description', () => {
   const wrapper2 = shallow(<Description />);
   it('should render a shallow copy of Description', () => {
-    expect(wrapper2.exists()).toBeTruthy(); 
+    expect(wrapper2.exists()).toBeTruthy();
   });
 });
 
 describe('Sizes', () => {
   const wrapper3 = shallow(<Sizes />);
   it('should render a shallow copy of Sizes', () => {
-    expect(wrapper3.exists()).toBeTruthy(); 
+    expect(wrapper3.exists()).toBeTruthy();
   });
 });
 
 describe('Row', () => {
   const wrapper4 = shallow(<Row />);
   it('should render a shallow copy of Row', () => {
-    expect(wrapper4.exists()).toBeTruthy(); 
+    expect(wrapper4.exists()).toBeTruthy();
   });
 });
 
@@ -43,4 +44,3 @@ describe('App', () => {
     expect(wrapper5.find('.sizes-buttons').length).toBe(18);
   });
 });
-
