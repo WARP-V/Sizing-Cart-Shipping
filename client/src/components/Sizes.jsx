@@ -27,16 +27,18 @@ const Sizes = ({
   </div>
 );
 
-export default Sizes;
-
 Sizes.propTypes = {
   sizes: PropTypes.arrayOf(PropTypes.number),
   defaultSizes: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
-  curButton: PropTypes.number.isRequired,
-  setCurrent: PropTypes.func.isRequired,
+  curButton: PropTypes.number,
+  setCurrent: PropTypes.func,
 };
 
 Sizes.defaultProps = {
   sizes: [-1],
-  defaultSizes: [-1],
+  defaultSizes: [],
+  curButton: -1,
+  setCurrent: () => {},
 };
+
+export default Sizes;
