@@ -1,6 +1,6 @@
 /* eslint react/jsx-filename-extension: [0] */
 
-import { configure, shallow, render, mount } from 'enzyme';
+import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import App from '../client/src/components/App';
