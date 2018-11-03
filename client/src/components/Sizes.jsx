@@ -5,17 +5,17 @@ import Row from './Row';
 const Sizes = ({
   sizes, defaultSizes, curButton, setCurrent,
 }) => (
-    <div className="sizes-info">
-      <div className="sizes-title">
-        <span>Select Size</span>
-        <span className="sizes-guide">Size Guide</span>
-      </div>
-      <div className="sizes-table">
-        {defaultSizes.map(
-          (size, i) => <Row row={size} change={(id) => { setCurrent(id + (i * 5)); }} curButton={curButton - (i * 5)} available={sizes} />,
-        )}
-      </div>
+  <div className="sizes-info">
+    <div className="sizes-title">
+      <span>Select Size</span>
+      <span className="sizes-guide">Size Guide</span>
     </div>
+    <div className="sizes-table">
+      {defaultSizes.map(
+        (size, i) => <Row row={size} change={(id) => { setCurrent(id + (i * 5)); }} curButton={curButton - (i * 5)} available={sizes} />,
+      )}
+    </div>
+  </div>
 );
 
 export default Sizes;

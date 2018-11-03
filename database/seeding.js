@@ -25,7 +25,7 @@ const shown = 'Black/Sail/Gym Red/Gym Red';
 
 const randomSizesGenerator = (countOfSizes, minValue, maxValue) => new Array(countOfSizes)
   .fill(0)
-  .map(n => Math.round(Math.random() * ((2 * maxValue) - (2 * minValue)) + (2 * minValue)) / 2);
+  .map(() => Math.round(Math.random() * ((2 * maxValue) - (2 * minValue)) + (2 * minValue)) / 2);
 
 
 const sizesAndDescriptionSchema = []; const minValue = 7; const maxValue = 18; const
