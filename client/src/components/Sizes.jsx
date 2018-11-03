@@ -11,9 +11,18 @@ const Sizes = ({
       <span className="sizes-guide">Size Guide</span>
     </div>
     <div className="sizes-table">
-      {defaultSizes.map(
-        (size, i) => <Row row={size} change={(id) => { setCurrent(id + (i * 5)); }} curButton={curButton - (i * 5)} available={sizes} />,
-      )}
+      {
+        defaultSizes.map(
+          (size, i) => (
+            <Row
+              row={size}
+              change={(id) => { setCurrent(id + (i * 5)); }}
+              curButton={curButton - (i * 5)}
+              available={sizes}
+            />
+          ),
+        )
+       }
     </div>
   </div>
 );
