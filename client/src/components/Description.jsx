@@ -17,4 +17,3 @@ export default Description;
 Description.propTypes = {
   description: PropTypes.arrayOf(PropTypes.strings).isRequired,
 };
-
