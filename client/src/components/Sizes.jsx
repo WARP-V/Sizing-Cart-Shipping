@@ -4,8 +4,7 @@ import Row from './Row';
 
 const Sizes = ({
   sizes, defaultSizes, curButton, setCurrent,
-}) => {
-  return (
+}) => (
     <div className="sizes-info">
       <div className="sizes-title">
         <span>Select Size</span>
@@ -17,8 +16,7 @@ const Sizes = ({
         )}
       </div>
     </div>
-  );
-};
+);
 
 export default Sizes;
 
