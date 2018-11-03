@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Description = ({ description }) => (
 
+const Description = ({ description }) => (
   <div className="description">
     <div className="description-paragraph">
       <p>
@@ -15,9 +15,6 @@ const Description = ({ description }) => (
 export default Description;
 
 Description.propTypes = {
-  description: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
+  description: PropTypes.arrayOf(PropTypes.strings).isRequired,
 };
 
-Description.defaultProps = {
-  description: ['no description'],
-};

@@ -23,8 +23,13 @@ const Sizes = ({
 export default Sizes;
 
 Sizes.propTypes = {
-  sizes: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
-  defaultSizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+  sizes: PropTypes.arrayOf(PropTypes.number),
+  defaultSizes: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
   curButton: PropTypes.number.isRequired,
-  setCurrent: PropTypes.number.isRequired,
+  setCurrent: PropTypes.func.isRequired,
+};
+
+Sizes.defaultProps = {
+  sizes: [-1],
+  defaultSizes: [-1],
 };

@@ -60,6 +60,10 @@ class App extends React.Component {
     const {
       sizes, curButton, description, defaultSizes,
     } = this.state;
+    console.log('sizes:', sizes);
+    console.log('description:', description);
+    console.log('curButton:', curButton);
+    console.log('defaultSizes', defaultSizes);
     return (
       <div id="sizesAndDescription">
         <Sizes
