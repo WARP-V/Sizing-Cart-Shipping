@@ -15,8 +15,8 @@ const Row = ({
 
 
 Row.propTypes = {
-  row: PropTypes.array,
-  available: PropTypes.array,
+  row: PropTypes.arrayOf(PropTypes.any),
+  available: PropTypes.arrayOf(PropTypes.any),
   curButton: PropTypes.number,
   change: PropTypes.func,
 };

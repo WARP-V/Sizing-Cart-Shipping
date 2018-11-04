@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541289962071" clover="3.2.0">
-  <project timestamp="1541289962071" name="All files">
-    <metrics statements="40" coveredstatements="35" conditionals="4" coveredconditionals="2" methods="18" coveredmethods="12" elements="62" coveredelements="49" complexity="0" loc="40" ncloc="40" packages="1" files="4" classes="4">
+<coverage generated="1541291148743" clover="3.2.0">
+  <project timestamp="1541291148744" name="All files">
+    <metrics statements="36" coveredstatements="31" conditionals="4" coveredconditionals="2" methods="17" coveredmethods="11" elements="57" coveredelements="44" complexity="0" loc="36" ncloc="36" packages="1" files="3" classes="3">
       <file name="App.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/App.jsx">
         <metrics statements="25" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="7"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
         <line num="37" count="2" type="stmt"/>
         <line num="38" count="2" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
         <line num="44" count="2" type="stmt"/>
-        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
         <line num="47" count="2" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
+        <line num="61" count="6" type="stmt"/>
         <line num="62" count="6" type="stmt"/>
         <line num="63" count="6" type="stmt"/>
         <line num="64" count="6" type="stmt"/>
         <line num="65" count="6" type="stmt"/>
         <line num="66" count="6" type="stmt"/>
-        <line num="67" count="6" type="stmt"/>
-      </file>
-      <file name="Description.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Description.jsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
       </file>
       <file name="Row.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Row.jsx">
         <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
@@ -51,8 +44,8 @@
         <line num="8" count="4" type="stmt"/>
         <line num="17" count="12" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>

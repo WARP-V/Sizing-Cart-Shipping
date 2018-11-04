@@ -19,6 +19,7 @@ const Sizes = ({
               change={(id) => { setCurrent(id + (i * 5)); }}
               curButton={curButton - (i * 5)}
               available={sizes}
+              key={`sizes_${i + 1}`}
             />
           ),
         )

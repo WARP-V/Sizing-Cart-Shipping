@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import Sizes from './Sizes';
-import Description from './Description';
 
 const _ = require('lodash');
 
@@ -76,7 +75,11 @@ class App extends React.Component {
           <button type="button" className="cart-button">Add to Cart</button>
           <button type="button" className="heart-button" title="Add to Wishlist"><i className="material-icons">favorite</i></button>
         </div>
-        <Description description={description} />
+        <div className="description-paragraph">
+          <p>
+            { description[2] }
+          </p>
+        </div>
         <div className="description-details">
           <ul className="details">
             <li>

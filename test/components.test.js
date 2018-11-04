@@ -5,7 +5,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import App from '../client/src/components/App';
 import Sizes from '../client/src/components/Sizes';
-import Description from '../client/src/components/Description';
 import Row from '../client/src/components/Row';
 
 configure({ adapter: new Adapter() });
@@ -14,13 +13,6 @@ describe('App', () => {
   const wrapper1 = shallow(<App />);
   it('should render a shallow copy of App', () => {
     expect(wrapper1.exists()).toBeTruthy();
-  });
-});
-
-describe('Description', () => {
-  const wrapper2 = shallow(<Description />);
-  it('should render a shallow copy of Description', () => {
-    expect(wrapper2.exists()).toBeTruthy();
   });
 });
 
