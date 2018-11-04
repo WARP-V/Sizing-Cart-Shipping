@@ -28,14 +28,14 @@ const Sizes = ({
 );
 
 Sizes.propTypes = {
-  sizes: PropTypes.arrayOf(PropTypes.number),
+  sizes: PropTypes.arrayOf(PropTypes.object),
   defaultSizes: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
   curButton: PropTypes.number,
   setCurrent: PropTypes.func,
 };
 
 Sizes.defaultProps = {
-  sizes: [-1],
+  sizes: [],
   defaultSizes: [],
   curButton: -1,
   setCurrent: () => {},

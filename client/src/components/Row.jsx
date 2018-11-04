@@ -14,12 +14,18 @@ const Row = ({
 );
 
 
-export default Row;
-
-
 Row.propTypes = {
-  row: PropTypes.number.isRequired,
-  available: PropTypes.arrayOf(PropTypes.number).isRequired,
-  curButton: PropTypes.number.isRequired,
-  change: PropTypes.number.isRequired,
+  row: PropTypes.array,
+  available: PropTypes.array,
+  curButton: PropTypes.number,
+  change: PropTypes.func,
 };
+
+Row.defaultProps = {
+  row: [],
+  available: [],
+  curButton: -1,
+  change: () => {},
+};
+
+export default Row;

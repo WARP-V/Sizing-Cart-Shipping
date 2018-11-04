@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541287814388" clover="3.2.0">
-  <project timestamp="1541287814389" name="All files">
-    <metrics statements="39" coveredstatements="34" conditionals="4" coveredconditionals="2" methods="17" coveredmethods="12" elements="60" coveredelements="48" complexity="0" loc="39" ncloc="39" packages="1" files="4" classes="4">
+<coverage generated="1541289962071" clover="3.2.0">
+  <project timestamp="1541289962071" name="All files">
+    <metrics statements="40" coveredstatements="35" conditionals="4" coveredconditionals="2" methods="18" coveredmethods="12" elements="62" coveredelements="49" complexity="0" loc="40" ncloc="40" packages="1" files="4" classes="4">
       <file name="App.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/App.jsx">
         <metrics statements="25" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="7"/>
         <line num="6" count="1" type="stmt"/>
@@ -34,15 +34,16 @@
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
       </file>
       <file name="Row.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Row.jsx">
-        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="13" type="stmt"/>
         <line num="9" count="54" type="cond" truecount="2" falsecount="2"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
       </file>
       <file name="Sizes.jsx" path="/Users/seanghazvini/HRSF105/FEC/Sizing-Cart-Shipping_Service/client/src/components/Sizes.jsx">
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>

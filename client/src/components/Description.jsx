@@ -12,12 +12,12 @@ const Description = ({ description }) => (
   </div>
 );
 
-export default Description;
-
 Description.propTypes = {
-  description: PropTypes.string,
+  description: PropTypes.arrayOf(PropTypes.string),
 };
 
 Description.defaultProps = {
-  description: [],
+  description: JSON.stringify([]),
 };
+
+export default Description;
