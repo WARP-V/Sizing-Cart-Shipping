@@ -6,17 +6,18 @@
   "engines": {
     "node": ">=6.13.0"
   },
-  "scripts": { 
+  "scripts": {
     "test": "jest --coverage",
     "start": "nodemon server/index.js",
     "seed": "node database/seeding.js",
     "react-dev": "webpack -d --watch",
     "lint": "eslint --ignore-path .gitignore . --fix",
-    "run-all": "nodemon server/index.js & node database/seeding.js & webpack -d --watch & eslint --ignore-path .gitignore . --fix" 
+    "run-all": "nodemon server/index.js & node database/seeding.js & webpack -d --watch & eslint --ignore-path .gitignore . --fix"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "css-loader": "^1.0.1",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",
@@ -26,7 +27,8 @@
     "path": "^0.12.7",
     "prop-types": "^15.6.2",
     "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react-dom": "^16.6.0",
+    "style-loader": "^0.23.1"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

@@ -13,7 +13,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?/,
         include: SRC_DIR,
@@ -21,6 +21,14 @@ module.exports = {
         query: {
           presets: ['react', 'es2015'],
         },
+      },
+      {
+        test: /\.css$/,
+        include: path.join(__dirname, './client/src'),
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+        ],
       },
     ],
   },
