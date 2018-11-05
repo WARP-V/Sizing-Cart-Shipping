@@ -1,7 +1,7 @@
 /* exported db */
 
 const mongoose = require('mongoose');
-const db = require('./index.js');
+require('./index.js');
 
 const sizesAndDescriptionSchema = new mongoose.Schema({
   shoeId: { type: String },
