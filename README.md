@@ -33,7 +33,7 @@ Run the following scripts when starting the project:
     "start": "nodemon server/index.js", // starts the server
     "react-dev": "webpack -d --watch", // starts wepback for compiling files
     "lint": "eslint --ignore-path .gitignore . --fix" // linter 
-    "test": "jest --coverage", //--> test suite
+    "test": "jest --coverage", // test suite
   },
 ```
 
