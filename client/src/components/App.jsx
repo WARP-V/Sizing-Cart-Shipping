@@ -48,7 +48,6 @@ class App extends React.Component {
       });
   }
 
-
   setCurrent(idx) {
     const newState = this.state;
     newState.curButton = idx;
@@ -82,13 +81,13 @@ class App extends React.Component {
             <li>
             Shown:
               {' '}
-              { JSON.stringify(description[1]) }
+              { (description[1]) }
             </li>
             <br />
             <li>
             Style:
               {' '}
-              { JSON.stringify(description[0]) }
+              { (description[0]) }
             </li>
           </ul>
           <div className="description-readmore">Read more</div>

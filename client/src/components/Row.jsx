@@ -13,7 +13,6 @@ const Row = ({
   </div>
 );
 
-
 Row.propTypes = {
   row: PropTypes.arrayOf(PropTypes.any),
   available: PropTypes.arrayOf(PropTypes.any),
