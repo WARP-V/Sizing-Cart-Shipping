@@ -79,15 +79,11 @@ class App extends React.Component {
         <div className="description-details">
           <ul className="details">
             <li>
-            Shown:
-              {' '}
-              { (description[1]) }
+              { `Shown: ${description[1]}` }
             </li>
             <br />
             <li>
-            Style:
-              {' '}
-              { (description[0]) }
+              { `Style: ${(description[0])}` }
             </li>
           </ul>
           <div className="description-readmore">Read more</div>
