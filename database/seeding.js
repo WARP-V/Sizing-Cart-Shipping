@@ -1,6 +1,5 @@
 const SizesAndDescription = require('./sizesanddescription.js');
 
-
 const shoeIDs = [
   '310805-408', '310806-408', '310806-002', '305381-113', '852542-306', '554724-062', '554724-113', '554724-071',
   '554724-610', '554724-050', '554724-109', 'AR4491-001', 'AR4491-700', 'AV3922-601', 'AV3922-348', 'AV3922-001',
@@ -51,7 +50,7 @@ SizesAndDescription.deleteMany({}, (error) => {
       if (err) {
         console.log(err);
       } else {
-        console.log(`Finished database seeding with ${documents.length} docs`);
+        console.log(`=-=-=-=-=-= FINISHED DB SEEDING WITH ${documents.length} DOCS =-=-=-=-=-=`);
       }
       process.exit();
     });

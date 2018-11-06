@@ -57,7 +57,7 @@ table {
   color:black; 
 }
 
-.sizes-title {
+#sizesAndDescription .sizes-title {
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -65,19 +65,19 @@ table {
   font-size: 18px;
 }
 
-.sizes-guide {
+#sizesAndDescription .sizes-guide {
   float: right;
   color: gray;
   cursor: pointer;
   font-size: 18px;
 }
 
-.sizes-table {
+#sizesAndDescription .sizes-table {
   float:right;
   width: 100%;
 }
 
-.sizes-buttons {
+#sizesAndDescription .sizes-buttons {
   background-color: white;
   height: 90%;
   width: 17%;
@@ -93,25 +93,25 @@ table {
   align-content: center;
 }
 
-.sizes-buttons:hover {
+#sizesAndDescription .sizes-buttons:hover {
   border: 2px solid black;
   margin: 1px;
 }
 
-.sizes-buttons:active {
+#sizesAndDescription .sizes-buttons:active {
   background-color: black;
 }
 
-.sizes-num {
+#sizesAndDescription .sizes-num {
   display: inline-block;
   margin: 25%;
 }
 
-.cart {
+#sizesAndDescription .cart {
   width: 377px;
 }
 
-.cart-button {
+#sizesAndDescription .cart-button {
   height: 30.85px;
   width: calc(100% - 80px);
   background: black;
@@ -124,7 +124,7 @@ table {
   margin-top: 40px;
 }
 
-.heart-button {
+#sizesAndDescription .heart-button {
   height: 30.85px;
   width: 50px;
   display: inline-block;
@@ -137,21 +137,21 @@ table {
   margin-top: 40px;
 }
 
-.available {
+#sizesAndDescription .available {
   background: rgba(221, 221, 221, 0.5)
 }
 
-.available .sizes-num {
+#sizesAndDescription .available .sizes-num {
   color: rgb(221, 221, 221)
 }
 
-.row {
+#sizesAndDescription .row {
   width: 100%;
   height: 48px;
   margin: 3px;
 }
 
-.description-paragraph {
+#sizesAndDescription .description-paragraph {
   padding-top: 16px;
   float: right;
   width: 100%;
@@ -159,7 +159,7 @@ table {
   margin: auto;
 }
 
-.description-paragraph p {
+#sizesAndDescription .description-paragraph p {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   padding-right: 30px;
   font-size: 18px;
@@ -169,7 +169,7 @@ table {
   padding-top: 16px;
 }
 
-.description-details {
+#sizesAndDescription .description-details {
   padding-top: 20px;
   float:right;
   width:100%;
@@ -178,19 +178,19 @@ table {
   font-size: 16px;
 }
 
-li {
+#sizesAndDescription li {
   list-style-type: disc;
   list-style-position: inside;
 }
   
-.description-readmore {
+#sizesAndDescription .description-readmore {
   padding-top: 20px;
   text-decoration: underline;
   cursor: pointer;
 }
 
 
-.current {
+#sizesAndDescription .current {
   background-color: black;
   color: white;
 }
