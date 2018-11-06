@@ -26,16 +26,13 @@
 
 ## Requirements
 
-```sh
-Run the following scripts when starting the project:
-   "scripts": {
-    "seed": "node database/seeding.js", //seeds the database
-    "start": "nodemon server/index.js", // starts the server
-    "react-dev": "webpack -d --watch", // starts wepback for compiling files
-    "lint": "eslint --ignore-path .gitignore . --fix" // linter 
-    "test": "jest --coverage", // test suite
-  },
-```
+Run the following commands when starting the project:
+   
+  - npm install -g webpack
+  - npm install
+  - npm run seed
+  - npm run build
+  - npm run start
 
 ## Development
 
@@ -44,12 +41,5 @@ Run the following scripts when starting the project:
   - Database = Mondodb with Mongoose
   - Server = Node with Express
 
-### Installing Dependencies
 
-From within the root directory:
-
-```sh
-npm install -g webpack
-npm install
-```
 
