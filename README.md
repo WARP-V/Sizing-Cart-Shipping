@@ -4,8 +4,11 @@
 
 ## Related Projects
 
-  - https://github.com/WARP-V
-  - https://github.com/WARP-V/Sizing-Cart_Service
+ - https://github.com/WARP-V/shoe_name_and_colors
+ - https://github.com/WARP-V/Navigation-Search-Service
+ - https://github.com/WARP-V/page-footer
+ - https://github.com/WARP-V/Sizing-Cart_Service
+ - https://github.com/WARP-V/Review-Service
 
 ## Table of Contents
 
