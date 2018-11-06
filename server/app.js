@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(bodyParser.json());
 
 
-app.get('/sizes/:shoeId', (req, res) => {
+app.get('/:shoeId/sizes', (req, res) => {
   const { shoeId } = req.params;
   getSizes(shoeId, (error, sizes) => {
     if (error) {
@@ -22,7 +22,7 @@ app.get('/sizes/:shoeId', (req, res) => {
   });
 });
 
-app.get('/description/:shoeId', (req, res) => {
+app.get('/:shoeId/description', (req, res) => {
   const { shoeId } = req.params;
   getDescription(shoeId, (error, description) => {
     if (error) {
