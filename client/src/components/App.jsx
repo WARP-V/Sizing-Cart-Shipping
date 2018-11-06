@@ -81,11 +81,13 @@ class App extends React.Component {
           <ul className="details">
             <li>
             Shown:
+              {' '}
               { JSON.stringify(description[1]) }
             </li>
             <br />
             <li>
             Style:
+              {' '}
               { JSON.stringify(description[0]) }
             </li>
           </ul>
