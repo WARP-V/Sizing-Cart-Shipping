@@ -4,4 +4,6 @@ import App from './components/App';
 
 require('./style.css');
 
-ReactDom.render(<App />, document.getElementById('app'));
+// ReactDom.render(<App />, document.getElementById('app'));
+
+window.SizesAndCart = App;
