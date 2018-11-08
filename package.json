@@ -8,9 +8,9 @@
   },
   "scripts": {
     "seed": "node database/seeding.js",
-    "react-dev": "webpack -d --watch",
+    "watch": "webpack -d --watch",
     "build": "webpack -d",
-    "start": "nodemon server/index.js",
+    "start": "nodemon server/server.js",
     "lint": "eslint --ignore-path .gitignore . --fix",
     "test": "jest --coverage",
     "run-all": "nodemon server/index.js & node database/seeding.js & webpack -d --watch & eslint --ignore-path .gitignore . --fix"

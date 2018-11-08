@@ -6,8 +6,8 @@ const Sizes = ({
   sizes, defaultSizes, curButton, setCurrent,
 }) => (
   <div className="sizes-info">
-    <div className="sizes-title">
-      <span>Select Size</span>
+    <div>
+      <span className="sizes-title">Select Size</span>
       <span className="sizes-guide">Size Guide</span>
     </div>
     <div className="sizes-table">
@@ -29,7 +29,7 @@ const Sizes = ({
 );
 
 Sizes.propTypes = {
-  sizes: PropTypes.arrayOf(PropTypes.object),
+  sizes: PropTypes.arrayOf(PropTypes.number),
   defaultSizes: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
   curButton: PropTypes.number,
   setCurrent: PropTypes.func,

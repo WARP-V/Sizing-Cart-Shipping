@@ -1,75 +1,22 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 #sizesAndDescription {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  width: 377px;
-  height: 213px;
-  float: right;
-  padding-right: 30px;
-  font-size: 10px;
-  color:black; 
+  width: 100%;
 }
 
 #sizesAndDescription .sizes-title {
+  float: left;
+  color: #000;
   cursor: pointer;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 30px;
-  font-size: 18px;
+  padding: 0px 0px 5px;
+  font-size: 12px;
 }
 
 #sizesAndDescription .sizes-guide {
   float: right;
   color: gray;
   cursor: pointer;
-  font-size: 18px;
+  padding: 0px 0px 5px;
+  font-size: 12px;
 }
 
 #sizesAndDescription .sizes-table {
@@ -78,13 +25,10 @@ table {
 }
 
 #sizesAndDescription .sizes-buttons {
-  background-color: white;
-  height: 90%;
-  width: 17%;
+  height: calc(100% - 6px);
+  width: calc(20% - 6px);
   margin: 2px;
-  border: lightgray;
   display: inline-block;
-  padding: 1px;
   border: 1px solid lightgray;
   border-radius: 5px;
   cursor: pointer;
@@ -94,8 +38,7 @@ table {
 }
 
 #sizesAndDescription .sizes-buttons:hover {
-  border: 2px solid black;
-  margin: 1px;
+  border: 1px solid black;
 }
 
 #sizesAndDescription .sizes-buttons:active {
@@ -103,38 +46,56 @@ table {
 }
 
 #sizesAndDescription .sizes-num {
-  display: inline-block;
-  margin: 25%;
-}
-
-#sizesAndDescription .cart {
-  width: 377px;
+  font-size: 12px;
+  margin: 14px auto;
 }
 
 #sizesAndDescription .cart-button {
-  height: 30.85px;
-  width: calc(100% - 80px);
-  background: black;
+  height: 36px;
+  width: calc(100% - 60px);
   display: inline-block;
-  vertical-align: top;
+  float: left;
   text-align: center;
   cursor: pointer;
-  color: white;
-  font-size: 18px;
-  margin-top: 40px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 12px;
+  margin: 25px 5px 0px 0px;
+  padding: 6px 0px;
+  border: none;
+  transition: background-color 450ms;
+}
+
+#sizesAndDescription .cart-button:hover {
+  background-color: #525252;
 }
 
 #sizesAndDescription .heart-button {
-  height: 30.85px;
+  height: 36px;
   width: 50px;
   display: inline-block;
-  vertical-align: top;
+  float: left;
   text-align: center;
   cursor: pointer;
-  background: black;
-  color: white;
-  font-size: 18px;
-  margin-top: 40px;
+  background: #000000;
+  color: #ffffff;
+  margin: 25px 0px 0px 0px;
+  padding: 10px 0px;
+  border: none;
+  transition: background-color 450ms;
+}
+
+#sizesAndDescription .heart-button:hover {
+  background-color: #525252;
+}
+
+#sizesAndDescription .heart-button i {
+  font-size: 12px;
+  transition: font-size 150ms;
+}
+
+#sizesAndDescription .heart-button:hover i {
+  font-size: 16px;
 }
 
 #sizesAndDescription .available {
@@ -148,47 +109,48 @@ table {
 #sizesAndDescription .row {
   width: 100%;
   height: 48px;
-  margin: 3px;
 }
 
 #sizesAndDescription .description-paragraph {
-  padding-top: 16px;
-  float: right;
+  margin: 0;
+  padding-top: 25px;
+  float: left;
   width: 100%;
-  padding: auto;
-  margin: auto;
 }
 
 #sizesAndDescription .description-paragraph p {
+  margin: 0;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  padding-right: 30px;
-  font-size: 18px;
+  font-size: 12px;
   display: block;
-  font-stretch: 100%;
-  line-height: 27px;
-  padding-top: 16px;
+  line-height: 22px;
 }
 
 #sizesAndDescription .description-details {
-  padding-top: 20px;
   float:right;
   width:100%;
   padding: auto;
   margin: auto;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+#sizesAndDescription .details {
+  padding: 10px 0px;
+  padding-left: 0;
 }
 
 #sizesAndDescription li {
   list-style-type: disc;
+  padding: 0;
+  line-height: 22px;
   list-style-position: inside;
 }
   
 #sizesAndDescription .description-readmore {
-  padding-top: 20px;
+  padding-top: 5px;
   text-decoration: underline;
   cursor: pointer;
 }
-
 
 #sizesAndDescription .current {
   background-color: black;

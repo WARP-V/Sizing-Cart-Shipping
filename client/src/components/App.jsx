@@ -41,7 +41,7 @@ class App extends React.Component {
 
   getDescription() {
     const { shoeId } = this.state;
-    axios.get(`/${shoeId}/description`)
+    axios.get(`/${shoeId}/descrip`)
       .then((response) => {
         const description = response.data;
         this.setState({ description });
@@ -81,7 +81,6 @@ class App extends React.Component {
             <li>
               { `Shown: ${description[1]}` }
             </li>
-            <br />
             <li>
               { `Style: ${(description[0])}` }
             </li>
