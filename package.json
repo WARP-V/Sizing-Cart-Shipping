@@ -10,10 +10,9 @@
     "seed": "node database/seeding.js",
     "watch": "webpack -d --watch",
     "build": "webpack -d",
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "lint": "eslint --ignore-path .gitignore . --fix",
-    "test": "jest --coverage",
-    "run-all": "nodemon server/index.js & node database/seeding.js & webpack -d --watch & eslint --ignore-path .gitignore . --fix"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "axios": "^0.18.0",
