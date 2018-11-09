@@ -23,7 +23,6 @@ app.get('/:shoeId/sizes', (req, res) => {
 });
 
 app.get('/:shoeId/descrip', (req, res) => {
-  console.log(req.params)
   const { shoeId } = req.params;
   getDescription(shoeId, (error, description) => {
     if (error) {
