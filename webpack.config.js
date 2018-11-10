@@ -10,10 +10,6 @@ module.exports = {
     path: DIST_DIR,
   },
   resolve: {
-    alias: {
-      react: 'preact-compat',
-      'react-dom': 'preact-compat',
-    },
     extensions: ['.js', '.jsx'],
   },
   module: {
