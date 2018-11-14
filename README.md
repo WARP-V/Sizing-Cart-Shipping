@@ -50,15 +50,15 @@ Run the following commands when starting the project:
     - shoes/
   - READ/GET:
     - shoes/:name/sizes
-    - shoes/:id/sizes
+    - shoes/:shoeId/sizes
     - shoes/:name/descrip
-    - shoes/:id/descrip
+    - shoes/:shoeId/descrip
   - READ ALL/GET ALL
     - shoes/
   - UPDATE/PATCH:
     - shoes/:name
-    - shoes/:id
+    - shoes/:shoeId
   - DELETE:
     - shoes/:name
-    - shoes/:id
+    - shoes/:shoeId
 
